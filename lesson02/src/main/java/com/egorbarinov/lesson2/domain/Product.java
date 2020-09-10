@@ -1,4 +1,4 @@
-package pro.bolshakov.geekbrains.lesson2.domain;
+package com.egorbarinov.lesson2.domain;
 
 import java.util.Objects;
 

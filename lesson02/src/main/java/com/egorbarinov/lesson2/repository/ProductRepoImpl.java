@@ -1,7 +1,7 @@
-package pro.bolshakov.geekbrains.lesson2.repository;
+package com.egorbarinov.lesson2.repository;
 
 import org.springframework.stereotype.Repository;
-import pro.bolshakov.geekbrains.lesson2.domain.Product;
+import com.egorbarinov.lesson2.domain.Product;
 
 import java.util.ArrayList;
 import java.util.HashMap;
