@@ -1,10 +1,10 @@
-package pro.bolshakov.geekbrains.lesson2.controller;
+package com.egorbarinov.lesson2.controller;
 
+import com.egorbarinov.lesson2.domain.Product;
+import com.egorbarinov.lesson2.service.ProductServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pro.bolshakov.geekbrains.lesson2.domain.Product;
-import pro.bolshakov.geekbrains.lesson2.service.ProductServiceImpl;
 
 import java.util.List;
 import java.util.UUID;
@@ -96,6 +96,13 @@ public class ProductController {
                 .filter(product-> product.getTitle().contains(title))
                 .map(product -> String.valueOf(product.getId()))
                 .collect(Collectors.joining(","));
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteProductById(@PathVariable("id") Long id) {
+        productService.removeById(id);
+        productService.getAll();
+        return "redirect:/products";
     }
 
 }

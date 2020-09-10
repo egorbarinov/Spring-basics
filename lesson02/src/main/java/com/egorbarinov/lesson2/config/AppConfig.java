@@ -1,4 +1,4 @@
-package pro.bolshakov.geekbrains.lesson2.config;
+package com.egorbarinov.lesson2.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan("pro.bolshakov.geekbrains.lesson2")
+@ComponentScan("com.egorbarinov.lesson2")
 public class AppConfig implements WebMvcConfigurer {
 
 

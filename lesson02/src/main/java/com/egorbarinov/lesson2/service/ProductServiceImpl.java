@@ -1,8 +1,8 @@
-package pro.bolshakov.geekbrains.lesson2.service;
+package com.egorbarinov.lesson2.service;
 
+import com.egorbarinov.lesson2.domain.Product;
+import com.egorbarinov.lesson2.repository.ProductRepoImpl;
 import org.springframework.stereotype.Service;
-import pro.bolshakov.geekbrains.lesson2.domain.Product;
-import pro.bolshakov.geekbrains.lesson2.repository.ProductRepoImpl;
 
 import java.util.Comparator;
 import java.util.List;

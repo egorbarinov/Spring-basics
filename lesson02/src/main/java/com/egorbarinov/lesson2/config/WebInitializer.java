@@ -1,4 +1,4 @@
-package pro.bolshakov.geekbrains.lesson2.config;
+package com.egorbarinov.lesson2.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
