@@ -1,4 +1,4 @@
-package pro.bolshakov.geekbrains.lesson2.controller;
+package com.egorbarinov.lesson2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
