@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /app
+
+spring:
+  mvc:
+    static-path-pattern: /statico/**
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: create
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+        id:
+          new_generator_mappings: false
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=products
+    username: postgres
+    password: password
+
+#      management:
+#        endpoints:
+#          web:
+#            exposure:
+#              include: info, health, beans, mappings
